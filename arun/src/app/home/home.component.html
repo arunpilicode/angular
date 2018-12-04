@@ -1,0 +1,25 @@
+<div class="home">
+
+<p>
+  
+  title is:{{title}};<br>
+  Name is: {{name}}<br>
+</p>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor='let product of products'>
+      <td>{{product.productId}}</td>
+      <td>{{product.productName}}</td>
+      <td>{{product.productCode}}</td>
+    </tr>
+  </tbody>
+  </table>
+
+</div>
